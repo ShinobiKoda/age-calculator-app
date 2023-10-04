@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Age Calculator</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="age_input">
+        <div>
+          <label for="day">DAY</label>
+          <input type="text" name="day" id="day" placeholder="DD" />
+          <span class="error" id="error_one">This field is required</span>
+          <span id="error_1" class="sec_error">Must be a valid day</span>
+        </div>
+
+        <div>
+          <label for="month">MONTH</label>
+          <input type="text" name="month" id="month" placeholder="MM" />
+          <span class="error" id="error_two">This field is required</span>
+          <span id="error_2" class="sec_error">Must be a valid month</span>
+        </div>
+
+        <div>
+          <label for="year">YEAR</label>
+          <input type="text" name="year" id="year" placeholder="YYY" />
+          <span class="error" id="error_three">This field is required</span>
+          <span id="error_3" class="sec_error">Must be in the past</span>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="arrow_img">
+        <img src="images/icon-arrow.svg" alt="arrow" id="arrow" />
+      </div>
+
+      <div class="age_results">
+        <div class="number">
+          <span class="age_no" id="years">--</span> years
+        </div>
+
+        <div class="number">
+          <span class="age_no" id="months">--</span> months
+        </div>
+
+        <div class="number"><span class="age_no" id="days">--</span> days</div>
+      </div>
+    </main>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
